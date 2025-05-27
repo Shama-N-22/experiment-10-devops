@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dummy HTML Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      header {
+        background-color: #f4f4f4;
+        padding: 20px;
+        text-align: center;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      .content {
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      .button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        margin: 10px 0;
+      }
+      .button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Dummy HTML Page</h1>
+      <p>This is a sample HTML file for testing purposes</p>
+    </header>
+
+    <div class="content">
+      <h2>About This Page</h2>
+      <p>This is a dummy HTML file that contains:</p>
+      <ul>
+        <li>Basic HTML5 structure</li>
+        <li>CSS styling</li>
+        <li>Sample content</li>
+        <li>Interactive elements</li>
+      </ul>
+
+      <h3>Sample Form</h3>
+      <form>
+        <label for="name">Name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+        /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+        /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          cols="50"
+          placeholder="Enter your message"
+        ></textarea
+        ><br /><br />
+
+        <button type="submit" class="button">Submit</button>
+      </form>
+
+      <h3>Sample List</h3>
+      <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ol>
+
+      <p>
+        <a href="#" class="button">Sample Button</a>
+      </p>
+    </div>
+
+    <footer
+      style="
+        text-align: center;
+        margin-top: 40px;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border-radius: 5px;
+      "
+    >
+      <p>&copy; 2024 Dummy HTML Page. This is just a test file.</p>
+    </footer>
+
+    <script>
+      // Simple JavaScript for interactivity
+      document.addEventListener("DOMContentLoaded", function () {
+        console.log("Dummy HTML page loaded successfully!");
+
+        // Add click event to buttons
+        const buttons = document.querySelectorAll(".button");
+        buttons.forEach((button) => {
+          button.addEventListener("click", function (e) {
+            if (this.textContent === "Sample Button") {
+              e.preventDefault();
+              alert("Button clicked! This is a dummy action.");
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
